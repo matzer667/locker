@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur de Mots de Passe Sécurisé</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="frontend/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="security-icon"></div>
+            <h1>Générateur de Mots de Passe</h1>
+            <p class="subtitle">Créez des mots de passe sécurisés avec l'IA Markov</p>
+        </div>
+        
+        <div class="password-section">
+            <div class="password-display empty" id="passwordDisplay">
+                🔐 Votre mot de passe apparaîtra ici
+            </div>
+            <div class="strength-indicator" id="strengthIndicator"></div>
+        </div>
+
+        <div class="controls">
+            <div class="control-group">
+                <label for="length">Longueur du mot de passe</label>
+                <input type="number" id="length" class="length-input" min="6" max="50" value="12" placeholder="Entre 6 et 50 caractères">
+            </div>
+        </div>
+        
+        <div class="actions">
+            <button class="btn generate-btn" id="generateBtn">
+                <span>🎲</span>
+                <span>Générer un Mot de Passe</span>
+            </button>
+            <button class="btn copy-btn" id="copyBtn" disabled>
+                <span>📋</span>
+                <span>Copier</span>
+            </button>
+        </div>
+    </div>
+    <script src="frontend/script.js"></script>
+</body>
+</html>
